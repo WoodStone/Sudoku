@@ -3,7 +3,7 @@ package no.vestein.sudoku.client;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import no.vestein.sudoku.Sudoku;
+import no.vestein.sudoku.Sudoku$;
 
 public class HtmlLauncher extends GwtApplication {
 
@@ -14,6 +14,6 @@ public class HtmlLauncher extends GwtApplication {
 
         @Override
         public ApplicationListener createApplicationListener () {
-                return new Sudoku();
+                return Sudoku$.MODULE$;
         }
 }
